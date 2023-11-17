@@ -35,7 +35,7 @@ public class AddCorredorActivity extends AppCompatActivity {
                 Corredor corredor = crearCorredor();
 
                 if (corredor == null){
-                    Toast.makeText(AddCorredorActivity.this, "faltan datos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddCorredorActivity.this, R.string.faltandatos, Toast.LENGTH_SHORT).show();
                 }else{
                     Intent intent = new Intent();
                     Bundle bundle = new Bundle();

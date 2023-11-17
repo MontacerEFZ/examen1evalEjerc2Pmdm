@@ -71,7 +71,7 @@ public class CorredorAdapter extends RecyclerView.Adapter<CorredorAdapter.Corred
 
     private AlertDialog editar(Corredor corredor) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle("seguro que quieres editar?");
+        builder.setTitle(R.string.seguroeditar);
         builder.setCancelable(false);
 
         View corredorModel =
@@ -90,15 +90,15 @@ public class CorredorAdapter extends RecyclerView.Adapter<CorredorAdapter.Corred
         btnCrear.setEnabled(false);
         btnCancelar.setEnabled(false);
 
-        builder.setNegativeButton("no", null);
-        builder.setPositiveButton("si", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.no, null);
+        builder.setPositiveButton(R.string.si, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (txtNombre.getText().toString().isEmpty() ||
                         txtDistancia.getText().toString().isEmpty() ||
                         txtTiempo.getText().toString().isEmpty()){
 
-                    Toast.makeText(context, "faltan datos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, R.string.faltandatos, Toast.LENGTH_SHORT).show();
                 }else {
                     corredor.setNombre(txtNombre.getText().toString());
                     corredor.setDistancia(Float.valueOf(txtDistancia.getText().toString()));
@@ -114,11 +114,11 @@ public class CorredorAdapter extends RecyclerView.Adapter<CorredorAdapter.Corred
 
     private AlertDialog borrar(Corredor corredor) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle("seguro que quieres borrar?");
+        builder.setTitle(R.string.seguroborrarr);
         builder.setCancelable(false);
 
-        builder.setNegativeButton("no", null);
-        builder.setPositiveButton("si", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.no, null);
+        builder.setPositiveButton(R.string.si, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 int position = objects.indexOf(corredor);

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="nombre"
+        android:hint="@string/nombre"
         android:inputType="text" />
 
     <EditText
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="tiempo"
+        android:hint="@string/tiempo"
         android:inputType="text" />
 
     <EditText
@@ -28,18 +28,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="distancia"
+        android:hint="@string/crear"
         android:inputType="text" />
 
     <Button
         android:id="@+id/btnCancelarAddCorredor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="cancelar" />
+        android:text="@string/cancelar" />
 
     <Button
         android:id="@+id/btnCrearAddCorredor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="crear" />
+        android:text="@string/crear" />
 </LinearLayout>

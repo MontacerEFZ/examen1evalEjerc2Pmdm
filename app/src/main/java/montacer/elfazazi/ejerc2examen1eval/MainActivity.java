@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                    adapter.notifyItemInserted(0);
                }
            }else {
-               Toast.makeText(MainActivity.this, "accion cancelada", Toast.LENGTH_SHORT).show();
+               Toast.makeText(MainActivity.this, R.string.accioncancelada, Toast.LENGTH_SHORT).show();
            }
             }
         });

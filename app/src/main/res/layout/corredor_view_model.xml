@@ -40,12 +40,12 @@
             android:id="@+id/btnEditarViewModel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="editar" />
+            android:text="@string/editar" />
 
         <Button
             android:id="@+id/btnBorrarViewModel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="borrar" />
+            android:text="@string/borrar" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
