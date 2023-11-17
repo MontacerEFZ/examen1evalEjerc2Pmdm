@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvFilaCorredorView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#A4974B4B"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbNombreViewModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lbTiempoViewModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lbDistanciaViewModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnEditarViewModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="editar" />
+
+        <Button
+            android:id="@+id/btnBorrarViewModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="borrar" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
